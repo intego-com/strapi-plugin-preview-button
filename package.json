@@ -1,6 +1,6 @@
 {
   "name": "@intego-com/preview-button",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Preview Data Before Publish It",
   "keywords": [],
   "license": "MIT",
@@ -66,5 +66,9 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intego-com/strapi-plugin-preview-button.git"
   }
 }
