@@ -1,1 +1,3 @@
-# strapi-plugin-preview-button
+# preview
+
+preview draft data
