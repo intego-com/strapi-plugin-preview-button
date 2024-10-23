@@ -1,6 +1,6 @@
 {
   "name": "@intego-com/strapi-plugin-preview-button",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Preview Data Before Publish It",
   "keywords": [],
   "license": "MIT",
