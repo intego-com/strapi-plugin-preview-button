@@ -1,13 +1,12 @@
 import { getTranslation } from './utils/getTranslation';
 import { PLUGIN_ID } from './pluginId';
 import { Initializer } from './components/Initializer';
-import { PluginIcon } from './components/PluginIcon';
-import MyPanel from './components/MyPanel';
+import PreviewButton from './components/PreviewButton';
 
 export default {
   register(app: any) {
 
-    app.getPlugin('content-manager').apis.addEditViewSidePanel([MyPanel]);
+    app.getPlugin('content-manager').apis.addEditViewSidePanel([PreviewButton]);
 
     app.registerPlugin({
       id: PLUGIN_ID,
