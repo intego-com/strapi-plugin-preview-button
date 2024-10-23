@@ -1,5 +1,5 @@
 {
-  "name": "preview-button",
+  "name": "@intego-com/preview-button",
   "version": "0.0.1",
   "description": "Preview Data Before Publish It",
   "keywords": [],
@@ -57,7 +57,7 @@
   },
   "strapi": {
     "kind": "plugin",
-    "name": "preview-button",
+    "name": "@intego-com/preview-button",
     "displayName": "Preview Button",
     "description": "Preview Data Before Publish It"
   },
