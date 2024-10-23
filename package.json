@@ -57,7 +57,7 @@
   },
   "strapi": {
     "kind": "plugin",
-    "name": "@intego-com/preview-button",
+    "name": "preview-button",
     "displayName": "Preview Button",
     "description": "Preview Data Before Publish It"
   },
