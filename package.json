@@ -1,11 +1,26 @@
 {
-  "name": "@intego-com/preview-button",
+  "name": "@intego-com/strapi-plugin-preview-button",
   "version": "0.0.5",
   "description": "Preview Data Before Publish It",
   "keywords": [],
   "license": "MIT",
   "author": "Kape <admin@kape.com>",
   "type": "commonjs",
+  "strapi": {
+    "kind": "plugin",
+    "name": "preview-button",
+    "displayName": "Preview Button",
+    "description": "Preview Data Before Publish It"
+  },
+  "scripts": {
+    "build": "strapi-plugin build",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json",
+    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
+    "verify": "strapi-plugin verify",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "release": "npm run build && standard-version && git push --follow-tags && npm publish"
+  },
   "exports": {
     "./package.json": "./package.json",
     "./strapi-admin": {
@@ -19,15 +34,6 @@
   "files": [
     "dist"
   ],
-  "scripts": {
-    "build": "strapi-plugin build",
-    "test:ts:back": "run -T tsc -p server/tsconfig.json",
-    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
-    "verify": "strapi-plugin verify",
-    "watch": "strapi-plugin watch",
-    "watch:link": "strapi-plugin watch:link",
-    "release": "npm run build && standard-version && git push --follow-tags && npm publish"
-  },
   "dependencies": {
     "@strapi/design-system": "^2.0.0-rc.11",
     "@strapi/icons": "^2.0.0-rc.11",
@@ -54,12 +60,6 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "styled-components": "^6.1.13"
-  },
-  "strapi": {
-    "kind": "plugin",
-    "name": "preview-button",
-    "displayName": "Preview Button",
-    "description": "Preview Data Before Publish It"
   },
   "volta": {
     "node": "18.20.4"
